@@ -1,8 +1,6 @@
 import { mode } from '@chakra-ui/theme-tools'
 import 'focus-visible/dist/focus-visible'
 
-import { post } from './markdown'
-
 const styles = {
   global: props => ({
     '.js-focus-visible': {
@@ -69,7 +67,6 @@ const styles = {
     a: {
       color: 'inherit',
     },
-    ...post,
   }),
 }
 
