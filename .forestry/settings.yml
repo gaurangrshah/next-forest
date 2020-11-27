@@ -16,8 +16,8 @@ sections:
   label: Data
   create: all
   match: "**/*"
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: public/static
+public_path: "/media"
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
