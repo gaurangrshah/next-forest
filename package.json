@@ -1,10 +1,10 @@
 {
-  "name": "brevifolia-nextjs",
+  "name": "gs-start",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Next.js",
+  "description": "Starter built with next and forestry",
   "license": "MIT",
   "version": "0.1.0",
-  "author": "kendallstrautman",
+  "author": "@gsdev",
   "scripts": {
     "dev": "next",
     "develop": "yarn dev",
@@ -12,9 +12,20 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/core": "1.0.0-rc.5",
+    "@chakra-ui/icons": "1.0.0-rc.5",
+    "@chakra-ui/theme": "1.0.0-rc.5",
+    "@chakra-ui/theme-tools": "1.0.0-rc.5",
+    "@chakra-ui/transition": "1.0.0-rc.5",
+    "focus-visible": "^5.2.0",
+    "framer-motion": "^2.9.4",
     "gray-matter": "^4.0.2",
+    "lodash.debounce": "4.0.8",
     "next": "^9.3.3",
+    "next-google-fonts": "1.2.1",
+    "next-seo": "4.7.3",
     "node-glob": "^1.2.0",
+    "nprogress": "0.2.0",
     "raw-loader": "^4.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -29,6 +40,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kendallstrautman/brevifolia-nextjs"
+    "url": "https://github.com/gaurangrshah/next-forest"
   }
 }
