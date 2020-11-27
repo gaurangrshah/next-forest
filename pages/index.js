@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import matter from 'gray-matter'
-import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
-import DefaultLayout from '../chakra/layouts/default'
 import { useToastDispatch } from '../chakra/contexts/toast-context'
 
 const Index = props => {
