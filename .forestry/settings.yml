@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: ''
+admin_path: https://vercel.com/gshah2020/next-forest/py59py4ct/admin
 webhook_url: 
 sections:
 - type: heading
