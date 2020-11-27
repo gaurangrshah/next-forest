@@ -1,5 +1,9 @@
 {
   "title": "gs-start",
   "description": "Starter built with next and forestry",
-  "repositoryUrl": "https://github.com/gaurangrshah/next-forest"
+  "repositoryUrl": "https://github.com/gaurangrshah/next-forest",
+  "preview_branch": "edit",
+  "preview_url": "https://vercel.com/gshah2020/next-forest/py59py4ct",
+  "deploy_branch": "master",
+  "deploy_url": "https://vercel.com/gshah2020/next-forest/hnn56j2cz"
 }
