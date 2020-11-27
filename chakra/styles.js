@@ -67,6 +67,36 @@ const styles = {
     a: {
       color: 'inherit',
     },
+    '.blog__body': {
+      a: {
+        pb: 6,
+      },
+      'h1, h2, h3, h4, h5, h6, p': {
+        fontWeight: 'normal',
+      },
+      p: {
+        color: 'inherit',
+      },
+      ul: {
+        listStyle: 'initial',
+      },
+      'ul, ol': {
+        ml: [5, null, 6],
+        mb: [5, null, 6],
+        pl: 6,
+      },
+    },
+    '.blog__body:last-child': {
+      mb: 0,
+    },
+    '.blog__footer a': {
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    '.blog__footer a svg': {
+      w: 5,
+    },
   }),
 }
 
