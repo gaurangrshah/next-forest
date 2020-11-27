@@ -1,36 +1,18 @@
-import Layout from '../components/Layout'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
+import { Box, Text } from '@chakra-ui/core'
 
 export default function Info({ frontmatter, markdownBody, title }) {
   return (
-    <Layout
-      pathname="info"
-      bgColor={frontmatter.background_color}
-      siteTitle={title}
+    <Box
+      as="section"
+      maxW="4xl"
+      p={[null, null, 8, 12]}
+      px={[5, null]}
+      py={[[5, null]]}
     >
-      <section className="info_blurb">
-        <ReactMarkdown source={markdownBody} />
-      </section>
-      <style jsx>{`
-        .info_blurb {
-          max-width: 800px;
-          padding: 1.5rem 1.25rem;
-        }
-
-        @media (min-width: 768px) {
-          .info_blurb {
-            padding: 2rem;
-          }
-        }
-
-        @media (min-width: 1440px) {
-          .info_blurb {
-            padding: 3rem;
-          }
-        }
-      `}</style>
-    </Layout>
+      <Text as={ReactMarkdown} source={markdownBody} />
+    </Box>
   )
 }
 
