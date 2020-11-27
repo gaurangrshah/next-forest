@@ -1,10 +1,10 @@
-import { header } from './header';
-import { nav } from './nav';
-import { footer } from './footer';
-import { main } from './main';
-import { wrapper } from './wrapper';
-import { container } from './container';
-import { row } from './row';
+import { header } from './header'
+import { nav } from './nav'
+import { footer } from './footer'
+import { main } from './main'
+import { wrapper } from './wrapper'
+import { container } from './container'
+import { row } from './row'
 
 const layerStyles = {
   wrapper,
@@ -13,7 +13,7 @@ const layerStyles = {
   main,
   footer,
   container,
-  row
-};
+  row,
+}
 
-export default layerStyles;
+export default layerStyles
