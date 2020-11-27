@@ -27,7 +27,7 @@ const Index = props => {
       <section>
         <BlogList allBlogs={props.allBlogs} />
         <button
-          class="snipcart-add-item"
+          className="snipcart-add-item"
           data-item-id="starry-night"
           data-item-price="79.99"
           data-item-url="/paintings/starry-night"

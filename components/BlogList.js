@@ -1,25 +1,30 @@
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
-import { Box, Image } from '@chakra-ui/core'
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  UnorderedList,
+  ListItem,
+  Text,
+} from '@chakra-ui/core'
+import { reformatDate, truncateSummary } from '../utils'
+
+const transform = {
+  transform: 'translateX(0px)',
+  transition: 'transform 0.5s ease-out',
+}
 
 const BlogList = ({ allBlogs }) => {
-  function truncateSummary(content) {
-    return content.slice(0, 200).trimEnd()
-  }
-
-  function reformatDate(fullDate) {
-    const date = new Date(fullDate)
-    return date.toDateString().slice(4)
-  }
-
   return (
     <>
-      <ul className="list">
+      <UnorderedList styleType="none">
         {allBlogs.length > 1 &&
           allBlogs.map(post => (
             <Link key={post.slug} href={{ pathname: `/blog/${post.slug}` }}>
               <a>
-                <li>
+                <ListItem layerStyle="postLayer" {...transform}>
                   <Box
                     className="hero_image"
                     w="full"
@@ -41,19 +46,26 @@ const BlogList = ({ allBlogs }) => {
                       alt={post.frontmatter.hero_image}
                     />
                   </Box>
-                  <div className="blog__info">
-                    <h2>{post.frontmatter.title}</h2>
-                    <h3> {reformatDate(post.frontmatter.date)}</h3>
-                    <Box
+                  <Box color="green.300" px={6}>
+                    <Heading as="h2" mb={2} lineHeight={1.25} {...transform}>
+                      {post.frontmatter.title}
+                    </Heading>
+                    <Heading as="h3" mb={[8, null, null, 12]} {...transform}>
+                      {reformatDate(post.frontmatter.date)}
+                    </Heading>
+                    <Text
+                      maxW="lg"
+                      lineHeight={1.65}
+                      {...transform}
                       as={ReactMarkdown}
                       source={truncateSummary(post.markdownBody)}
                     />
-                  </div>
-                </li>
+                  </Box>
+                </ListItem>
               </a>
             </Link>
           ))}
-      </ul>
+      </UnorderedList>
     </>
   )
 }
