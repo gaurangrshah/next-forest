@@ -14,3 +14,21 @@ fields:
 - type: file
   name: hero_image
   label: hero_image
+- name: published
+  type: boolean
+  label: published
+  description: toggle to publish post
+  default: false
+- name: date_created
+  type: datetime
+  label: date created
+  description: date published
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  showOnly:
+    field: published
+    value: true
