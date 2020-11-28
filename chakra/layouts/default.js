@@ -7,7 +7,7 @@ import AuthButton from '../../components/auth/auth-buttons'
 import CustomLink from '../../components/custom-link'
 import { NavProvider } from '../contexts/nav-context'
 import { useToastState } from '../contexts/toast-context'
-
+import { Logo } from '../../components/logo'
 // pages will be added to navContext
 const PAGES = ['home', 'about', 'services', 'contact']
 
@@ -31,18 +31,20 @@ function DefaultLayout({ title, SEO, config, children }) {
             pages={PAGES}
             controls={[AuthButton, CustomLink]}
             headerShow={config?.headerShow}
+            bg={color('barBg')}
+            // {...{ Logo }}
           />
         </NavProvider>
-        <Box as="section" layerStyle="main" py={24}>
+        <Box as="section" layerStyle="main">
           {children}
         </Box>
         <Flex
           as="footer"
-          bg={color('bg')}
+          bg={color('barBg')}
           layerStyle="footer"
           display={config?.footerShow ? 'flex' : 'none'}
         >
-          footer
+          <Box layerStyle="footer.body">Footer</Box>
         </Flex>
       </Flex>
     </>

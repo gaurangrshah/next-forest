@@ -1,4 +1,5 @@
 export const light = {
-  bg: 'green.400',
-  color: 'whiteAlpha.900'
-};
+  bg: 'teal.50',
+  barBg: 'blue.50',
+  color: 'whiteAlpha.900',
+}
