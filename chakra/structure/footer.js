@@ -1,4 +1,4 @@
-import { constants } from './constants';
+import { constants } from './constants'
 
 export const footer = {
   w: constants.maxWidth,
@@ -6,5 +6,11 @@ export const footer = {
   p: constants.minPadding,
   position: 'fixed',
   justify: 'space-between',
-  bottom: '0px'
-};
+  bottom: '0px',
+  my: 'auto',
+}
+
+footer.body = {
+  w: constants.maxWidth,
+  maxW: constants.bodyMax,
+}

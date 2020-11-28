@@ -1,14 +1,13 @@
-import { constants } from './constants';
+import { constants } from './constants'
 
 export const header = {
   w: constants.maxWidth,
   h: constants.barHeight,
-  maxWidth: constants.maxWidth,
   px: constants.minPaddingX,
   py: constants.minPaddingY,
   alignItems: 'center',
-  justifyContent: 'space-between'
-};
+  justifyContent: 'space-between',
+}
 
 header.mobile = {
   display: ['flex', null, null, 'none'],
@@ -21,8 +20,8 @@ header.mobile = {
   fontSize: 'lg',
   overflow: 'hidden',
   textTransform: 'capitalize',
-  cursor: 'pointer'
-};
+  cursor: 'pointer',
+}
 
 header.desktop = {
   ml: 'auto',
@@ -36,5 +35,11 @@ header.desktop = {
   fontSize: 'md',
   overflow: 'hidden',
   textTransform: 'capitalize',
-  cursor: 'pointer'
-};
+  cursor: 'pointer',
+}
+
+header.body = {
+  m: 'auto',
+  w: constants.maxWidth,
+  maxW: constants.bodyMax,
+}
